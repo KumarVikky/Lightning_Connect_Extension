@@ -11,6 +11,33 @@
   themeStyles.href = 'assets/themes.css';
   document.head.append(themeStyles);
 
+  const brandStyles = document.createElement('link');
+  brandStyles.rel = 'stylesheet';
+  brandStyles.href = 'assets/brand.css';
+  document.head.append(brandStyles);
+
+  const screenshotStyles = document.createElement('link');
+  screenshotStyles.rel = 'stylesheet';
+  screenshotStyles.href = 'assets/screenshots.css';
+  document.head.append(screenshotStyles);
+
+  const siteIcon = 'assets/lightning-connect-icon.png';
+  [['icon', 'image/png'], ['apple-touch-icon', 'image/png']].forEach(([rel, type]) => {
+    const iconLink = document.createElement('link');
+    iconLink.rel = rel;
+    iconLink.type = type;
+    iconLink.href = siteIcon;
+    document.head.append(iconLink);
+  });
+  document.querySelectorAll('.brand-mark').forEach((mark) => {
+    mark.replaceChildren(Object.assign(document.createElement('img'), {
+      src: siteIcon,
+      alt: '',
+      width: 128,
+      height: 128
+    }));
+  });
+
   document.querySelectorAll('[data-current-year]').forEach((node) => { node.textContent = String(new Date().getFullYear()); });
   document.querySelectorAll('.site-nav a').forEach((link) => {
     if (link.getAttribute('href') === pageLink) link.setAttribute('aria-current', 'page');

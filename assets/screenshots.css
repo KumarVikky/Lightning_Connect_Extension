@@ -1,0 +1,3 @@
+/* Keep every supplied product screenshot fully visible in its compact presentation frame. */
+.hero-window img,.showcase-shot img,.detail-screen img,.wide-screen img,.gallery-item img{object-fit:contain!important;object-position:center!important;background:#edf5fa}
+body[data-theme="midnight"] .hero-window img,body[data-theme="midnight"] .showcase-shot img,body[data-theme="midnight"] .detail-screen img,body[data-theme="midnight"] .wide-screen img,body[data-theme="midnight"] .gallery-item img{background:#0a2744}
