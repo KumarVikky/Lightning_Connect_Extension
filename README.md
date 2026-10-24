@@ -51,7 +51,7 @@ Open the local address printed by `serve`.
 
 ## Publish to GitHub Pages
 
-1. Push this public repository to its `main` branch.
+1. Push this public repository to its `master` branch.
 2. In GitHub, open **Settings → Pages** and select **GitHub Actions** as the source.
 3. The included workflow at `.github/workflows/deploy-documentation.yml` publishes the site.
 
