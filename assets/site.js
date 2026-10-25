@@ -4,7 +4,14 @@
   const nav = document.querySelector('.site-nav');
   const menuButton = document.querySelector('.menu-button');
   const currentPage = document.body.dataset.page;
-  const pageLink = { home: 'index.html', features: 'features.html', support: 'support.html', privacy: 'privacy.html' }[currentPage];
+  const pageLink = { home: 'index.html', features: 'features.html', support: 'support.html', privacy: 'privacy.html', 'version-history': 'version-history.html' }[currentPage];
+
+  if (nav && !nav.querySelector('a[href="version-history.html"]')) {
+    const versionHistoryLink = document.createElement('a');
+    versionHistoryLink.href = 'version-history.html';
+    versionHistoryLink.textContent = 'Version History';
+    nav.insertBefore(versionHistoryLink, nav.querySelector('.nav-github'));
+  }
 
   const themeStyles = document.createElement('link');
   themeStyles.rel = 'stylesheet';
