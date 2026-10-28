@@ -1,4 +1,4 @@
-name: Deploy Lightning Connect documentation
+name: Deploy Lightning Craft documentation
 
 on:
   push:

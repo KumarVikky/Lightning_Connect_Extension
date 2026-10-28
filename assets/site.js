@@ -1,5 +1,5 @@
 (() => {
-  const documentationRepo = 'https://github.com/KumarVikky/Lightning_Connect_Extension';
+  const documentationRepo = 'https://github.com/KumarVikky/Lightning_Craft_Extension';
   const issuesUrl = `${documentationRepo}/issues`;
   const nav = document.querySelector('.site-nav');
   const menuButton = document.querySelector('.menu-button');
@@ -28,7 +28,7 @@
   screenshotStyles.href = 'assets/screenshots.css';
   document.head.append(screenshotStyles);
 
-  const siteIcon = 'assets/lightning-connect-icon.png';
+  const siteIcon = 'assets/lightning-craft-icon.png';
   [['icon', 'image/png'], ['apple-touch-icon', 'image/png']].forEach(([rel, type]) => {
     const iconLink = document.createElement('link');
     iconLink.rel = rel;
@@ -99,10 +99,10 @@
       ? '<span aria-hidden="true">☀</span><span class="theme-label">Daylight</span>'
       : '<span aria-hidden="true">☾</span><span class="theme-label">Midnight</span>';
   };
-  try { applyTheme(localStorage.getItem('lightning-connect-theme') || 'daylight'); } catch { applyTheme('daylight'); }
+  try { applyTheme(localStorage.getItem('lightning-craft-theme') || 'daylight'); } catch { applyTheme('daylight'); }
   themeButton.addEventListener('click', () => {
     const nextTheme = document.body.dataset.theme === 'midnight' ? 'daylight' : 'midnight';
-    try { localStorage.setItem('lightning-connect-theme', nextTheme); } catch { /* Theme switching still works without storage. */ }
+    try { localStorage.setItem('lightning-craft-theme', nextTheme); } catch { /* Theme switching still works without storage. */ }
     applyTheme(nextTheme);
   });
 
