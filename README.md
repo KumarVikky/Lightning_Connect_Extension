@@ -6,7 +6,7 @@
 
 ## What you can do
 
-- **Launch from Salesforce** — Open the in-page Salesforce Connect launcher to explore objects, users, organization context, and direct workspace actions.
+- **Launch from Salesforce** — Open the in-page Lightning Craft launcher to explore objects, users, organization context, and direct workspace actions.
 - **Data Export** — Browse objects and fields, create and validate SOQL, inspect paged results, and export or copy data as CSV or Excel.
 - **Data Import** — Enter, paste, or upload CSV/XLS/XLSX records; map fields, validate staged rows, and run permitted create, update, upsert, or delete operations.
 - **View records** — Inspect available fields and eligible record values in a metadata-aware data view.
