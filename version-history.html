@@ -7,6 +7,7 @@
     <meta name="theme-color" content="#071b38">
     <title>Version History | Lightning Craft</title>
     <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/version-history.css">
   </head>
   <body data-page="version-history">
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -24,29 +25,70 @@
     </header>
 
     <main id="main-content">
-      <section class="page-hero">
+      <section class="page-hero version-hero">
         <p class="eyebrow">Version history</p>
-        <h1>What&apos;s new: <em>v1.1</em></h1>
-        <p>Lightning Craft v1.1 brings a focused Salesforce workspace to Chrome, keeping everyday data, metadata, and developer workflows close to the org you are already using.</p>
+        <h1>What&apos;s new</h1>
+        <p>Explore the highlights from each Lightning Craft release.</p>
       </section>
 
-      <section class="section contrast-section">
-        <div class="section-heading">
-          <p class="section-label">Initial release</p>
-          <h2>A connected toolkit for Salesforce teams.</h2>
-          <p>Version 1.1 is designed to reduce context switching while keeping important actions visible, reviewable, and grounded in your active Salesforce session.</p>
+      <section class="version-section contrast-section" aria-label="Release highlights">
+        <div class="version-layout">
+          <nav class="version-tabs" role="tablist" aria-label="Choose a version" aria-orientation="vertical">
+            <button class="version-tab" id="version-tab-1-1" type="button" role="tab" aria-controls="version-panel-1-1" aria-selected="true" tabindex="0" data-version="v1.1"><span class="version-tab-number">v1.1</span><span class="version-tab-label">Latest release</span></button>
+            <button class="version-tab" id="version-tab-1-0" type="button" role="tab" aria-controls="version-panel-1-0" aria-selected="false" tabindex="-1" data-version="v1.0"><span class="version-tab-number">v1.0</span><span class="version-tab-label">Initial release</span></button>
+          </nav>
+
+          <div class="version-panels">
+            <article class="version-panel" id="version-panel-1-1" role="tabpanel" aria-labelledby="version-tab-1-1" tabindex="0">
+              <div class="version-panel-heading">
+                <p class="section-label">Latest release · v1.1</p>
+                <h2>More polished, more consistent.</h2>
+                <p>Lightning Craft v1.1 refines the workspace and the tools you use every day, with improvements to component creation, editing, navigation, and Salesforce access.</p>
+              </div>
+              <div class="version-highlights">
+                <section class="version-highlight">
+                  <span class="version-highlight-number">01</span>
+                  <div><h3>Choose the right Salesforce API version</h3><p>Developer Console creation dialogs load the available API versions from the connected Salesforce org. The version you choose is used when creating or deploying supported components.</p></div>
+                </section>
+                <section class="version-highlight">
+                  <span class="version-highlight-number">02</span>
+                  <div><h3>Clearer editing for Local Files</h3><p>Local Files use their file type to select the editor language, bringing syntax colors to supported files while you work on scratch content.</p></div>
+                </section>
+                <section class="version-highlight">
+                  <span class="version-highlight-number">03</span>
+                  <div><h3>Keyboard-friendly dialogs</h3><p>Move between modal action buttons with the left and right arrow keys in Developer Console, Settings, data tools, metadata dialogs, and drawer confirmations.</p></div>
+                </section>
+                <section class="version-highlight">
+                  <span class="version-highlight-number">04</span>
+                  <div><h3>Focused Salesforce access</h3><p>Salesforce origin checks were strengthened and extension permissions were streamlined for the supported Salesforce workflows.</p></div>
+                </section>
+                <section class="version-highlight">
+                  <span class="version-highlight-number">05</span>
+                  <div><h3>A more consistent Lightning Craft experience</h3><p>Branding and small interface details were refined across the launcher, Developer Console, and supporting pages.</p></div>
+                </section>
+              </div>
+            </article>
+
+            <article class="version-panel" id="version-panel-1-0" role="tabpanel" aria-labelledby="version-tab-1-0" tabindex="0" hidden>
+              <div class="version-panel-heading">
+                <p class="section-label">Initial release · v1.0</p>
+                <h2>A connected toolkit for Salesforce teams.</h2>
+                <p>Version 1.0 is designed to reduce context switching while keeping important actions visible, reviewable, and grounded in your active Salesforce session.</p>
+              </div>
+              <ul class="check-list">
+                <li><strong>Salesforce-native launcher.</strong> Open the extension directly from supported Salesforce pages and keep your current org context in view.</li>
+                <li><strong>Data Export.</strong> Browse objects and fields, build SOQL queries, inspect results, and export or copy data in practical formats.</li>
+                <li><strong>Data Import.</strong> Stage CSV, Excel, pasted, or manually entered records, map fields, validate rows, and review operations before execution.</li>
+                <li><strong>Data View.</strong> Inspect records and field details with a focused view for understanding Salesforce data in context.</li>
+                <li><strong>Download Metadata.</strong> Discover metadata types, select components, review dependencies, generate package.xml, and download Metadata API ZIP packages.</li>
+                <li><strong>Developer Console.</strong> Browse supported source, edit files, compare changes, work with local scratch files, and run developer workflows.</li>
+                <li><strong>Local-first preferences.</strong> Keep settings, query history, mappings, package configurations, and Local Files in the browser profile where you use the extension.</li>
+                <li><strong>Review-oriented workflows.</strong> Use validation, staging, selection, and result views to make informed changes in the connected org.</li>
+                <li><strong>Built-in documentation and support.</strong> Find product guidance, privacy details, troubleshooting help, and a direct path to report bugs.</li>
+              </ul>
+            </article>
+          </div>
         </div>
-        <ul class="check-list">
-          <li><strong>Salesforce-native launcher.</strong> Open the extension directly from supported Salesforce pages and keep your current org context in view.</li>
-          <li><strong>Data Export.</strong> Browse objects and fields, build SOQL queries, inspect results, and export or copy data in practical formats.</li>
-          <li><strong>Data Import.</strong> Stage CSV, Excel, pasted, or manually entered records, map fields, validate rows, and review operations before execution.</li>
-          <li><strong>Data View.</strong> Inspect records and field details with a focused view for understanding Salesforce data in context.</li>
-          <li><strong>Download Metadata.</strong> Discover metadata types, select components, review dependencies, generate package.xml, and download Metadata API ZIP packages.</li>
-          <li><strong>Developer Console.</strong> Browse supported source, edit files, compare changes, work with local scratch files, and run developer workflows.</li>
-          <li><strong>Local-first preferences.</strong> Keep settings, query history, mappings, package configurations, and Local Files in the browser profile where you use the extension.</li>
-          <li><strong>Review-oriented workflows.</strong> Use validation, staging, selection, and result views to make informed changes in the connected org.</li>
-          <li><strong>Built-in documentation and support.</strong> Find product guidance, privacy details, troubleshooting help, and a direct path to report bugs.</li>
-        </ul>
       </section>
 
       <section class="cta-band">
@@ -61,5 +103,6 @@
       <div class="footer-bottom"><span>© <span data-current-year></span> Lightning Craft</span><span>Built for Salesforce teams</span></div>
     </footer>
     <script src="assets/site.js"></script>
+    <script src="assets/version-history.js"></script>
   </body>
 </html>
