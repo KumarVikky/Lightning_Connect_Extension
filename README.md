@@ -19,6 +19,13 @@ Lightning Craft is built for a signed-in Salesforce user. It reads the active Sa
 
 Salesforce permissions remain in control. Object permissions, field-level security, API limits, session state, and other Salesforce controls can affect what a user can view or do.
 
+## Install Lightning Craft
+
+1. Open the [Lightning Craft Chrome Web Store listing](https://chromewebstore.google.com/detail/cenbodcbondlhgnpifnpkpooghojfcen?utm_source=item-share-cp).
+2. Select **Add to Chrome**, then confirm with **Add extension**.
+3. Sign in to a supported Salesforce domain in the same Chrome profile.
+4. Open the Lightning Craft launcher from the right side of the Salesforce page.
+
 ## Privacy at a glance
 
 - Workspace preferences, query history, mappings, saved package configurations, and enabled Local Files are stored locally in the browser.
